@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "title": "成人慢病院外健康管理本体",
   "scope": "18岁及以上普通成年人；肥胖、高血压、糖尿病；院外非药物健康管理",
   "themes": [
@@ -12,6 +12,50 @@
     "verified",
     "pending_human_review",
     "structure_only"
+  ],
+  "evidence_scopes": [
+    {
+      "id": "statement_level",
+      "label": "陈述级证据",
+      "definition": "支撑某一条具体断言的证据，必须能定位到章节或页码；医学因果断言（HAS_RISK_FACTOR）只接受本级证据。",
+      "max_cited_by": 8,
+      "allowed_relation_types": [
+        "HAS_RISK_FACTOR"
+      ]
+    },
+    {
+      "id": "concept_level",
+      "label": "概念级证据",
+      "definition": "支撑管理方法、管理路径或整体框架的陈述，用于连接多个管理对象，不作为单条医学因果断言的依据。",
+      "max_cited_by": 40,
+      "allowed_relation_types": [
+        "APPLIES_TO",
+        "ASSESSED_BY",
+        "MEASURED_BY",
+        "SHARES_FACTOR_WITH",
+        "MANAGED_BY",
+        "CONTRIBUTES_TO_GOAL",
+        "MONITORED_BY",
+        "REVIEWED_IN",
+        "TRIGGERS_MEDICAL_REVIEW"
+      ]
+    },
+    {
+      "id": "scope_level",
+      "label": "适用范围证据",
+      "definition": "说明某类内容适用于哪些人群或场景，用于支撑 APPLIES_TO 关系。",
+      "max_cited_by": 12,
+      "allowed_relation_types": [
+        "APPLIES_TO"
+      ]
+    },
+    {
+      "id": "definition_level",
+      "label": "定义级证据",
+      "definition": "支撑概念或指标定义，只用于节点，不支撑任何关系断言。",
+      "max_cited_by": 12,
+      "allowed_relation_types": []
+    }
   ],
   "classes": [
     {

@@ -6,7 +6,8 @@
     "locator_status": "section_verified",
     "claim_summary": "成人较高身体活动水平与较低高血压、2型糖尿病发生风险有关；与更有利脂肪指标及较少体重增加的关联证据较弱。用于健康管理关联建模，不将获益反推为确定致病因果。",
     "applicability": "普通成年人；糖尿病结局仅限2型；非因果或个体诊疗结论",
-    "review_status": "verified"
+    "review_status": "verified",
+    "scope": "statement_level"
   },
   {
     "id": "ev_activity_definition",
@@ -15,7 +16,8 @@
     "locator_status": "section_verified",
     "claim_summary": "身体活动不足指未达到推荐的身体活动水平，不等同于久坐。",
     "applicability": "普通成年人；糖尿病结局仅限2型；非因果或个体诊疗结论",
-    "review_status": "verified"
+    "review_status": "verified",
+    "scope": "definition_level"
   },
   {
     "id": "ev_diabetes_diet",
@@ -24,7 +26,8 @@
     "locator_status": "section_verified",
     "claim_summary": "成人糖尿病食养强调均衡膳食和健康生活方式。",
     "applicability": "18岁及以上普通成年人；院外健康管理",
-    "review_status": "pending_human_review"
+    "review_status": "pending_human_review",
+    "scope": "concept_level"
   },
   {
     "id": "ev_diabetes_management",
@@ -33,7 +36,8 @@
     "locator_status": "pending",
     "claim_summary": "糖尿病综合健康管理包括教育、营养、运动、体重与血糖监测。",
     "applicability": "18岁及以上普通成年人；院外健康管理",
-    "review_status": "pending_human_review"
+    "review_status": "pending_human_review",
+    "scope": "concept_level"
   },
   {
     "id": "ev_followup",
@@ -42,7 +46,8 @@
     "locator_status": "section_verified",
     "claim_summary": "基层慢性病健康管理包含高风险发现、分类分级、连续随访和多病共管。",
     "applicability": "18岁及以上普通成年人；院外健康管理",
-    "review_status": "pending_human_review"
+    "review_status": "pending_human_review",
+    "scope": "concept_level"
   },
   {
     "id": "ev_home_bp_standard",
@@ -51,7 +56,8 @@
     "locator_status": "pending",
     "claim_summary": "家庭血压应按规范时间与方法测量、记录，并用于持续随访管理。",
     "applicability": "18岁及以上普通成年人；院外健康管理",
-    "review_status": "pending_human_review"
+    "review_status": "pending_human_review",
+    "scope": "definition_level"
   },
   {
     "id": "ev_htn",
@@ -60,7 +66,8 @@
     "locator_status": "pending",
     "claim_summary": "高血压院外管理包含营养、运动和自我管理内容。",
     "applicability": "18岁及以上普通成年人；院外健康管理",
-    "review_status": "pending_human_review"
+    "review_status": "pending_human_review",
+    "scope": "concept_level"
   },
   {
     "id": "ev_htn_behavioral_risks_2024",
@@ -69,7 +76,8 @@
     "locator_status": "page_verified",
     "claim_summary": "高盐膳食、吸烟、过量饮酒、精神紧张或工作压力是高血压风险因素。",
     "applicability": "普通成年人；院外非药物健康管理；仅作高血压风险因素陈述，不作个体风险判断。",
-    "review_status": "verified"
+    "review_status": "verified",
+    "scope": "statement_level"
   },
   {
     "id": "ev_htn_diet",
@@ -78,7 +86,8 @@
     "locator_status": "section_verified",
     "claim_summary": "成人高血压食养强调合理膳食和控盐等健康行为。",
     "applicability": "18岁及以上普通成年人；院外健康管理",
-    "review_status": "pending_human_review"
+    "review_status": "pending_human_review",
+    "scope": "concept_level"
   },
   {
     "id": "ev_obesity",
@@ -87,7 +96,8 @@
     "locator_status": "section_verified",
     "claim_summary": "成人肥胖管理包含合理膳食、能量管理和健康生活方式。",
     "applicability": "18岁及以上普通成年人；院外健康管理",
-    "review_status": "pending_human_review"
+    "review_status": "pending_human_review",
+    "scope": "definition_level"
   },
   {
     "id": "ev_obesity_diet_etiology",
@@ -96,7 +106,8 @@
     "locator_status": "page_verified",
     "claim_summary": "过量高能量、高糖食物和饮料，以及长期高油、高糖膳食模式可促进肥胖；仅作为关联/病因证据使用。",
     "applicability": "普通成年人；院外非药物健康管理；仅作关联/病因证据，非个体确定因果。",
-    "review_status": "verified"
+    "review_status": "verified",
+    "scope": "statement_level"
   },
   {
     "id": "ev_obesity_sleep_risk",
@@ -105,7 +116,8 @@
     "locator_status": "page_verified",
     "claim_summary": "包括睡眠不足在内的不良睡眠习惯是肥胖的重要风险因素。",
     "applicability": "普通成年人；院外非药物健康管理；仅作关联/病因证据，非个体确定因果。",
-    "review_status": "verified"
+    "review_status": "verified",
+    "scope": "statement_level"
   },
   {
     "id": "ev_obesity_stress_risk",
@@ -114,7 +126,8 @@
     "locator_status": "page_verified",
     "claim_summary": "精神心理压力可改变食欲和进食并促进肥胖；不表示对个体的确定性因果。",
     "applicability": "普通成年人；院外非药物健康管理；仅作关联/病因证据，非个体确定因果。",
-    "review_status": "verified"
+    "review_status": "verified",
+    "scope": "statement_level"
   },
   {
     "id": "ev_sedentary_definition",
@@ -123,7 +136,8 @@
     "locator_status": "section_verified",
     "claim_summary": "久坐行为指清醒时低能量消耗的坐、斜倚或卧姿活动。",
     "applicability": "普通成年人；糖尿病结局仅限2型；非因果或个体诊疗结论",
-    "review_status": "verified"
+    "review_status": "verified",
+    "scope": "definition_level"
   },
   {
     "id": "ev_sedentary_diabetes",
@@ -132,7 +146,8 @@
     "locator_status": "section_verified",
     "claim_summary": "成人更多久坐与2型糖尿病发生相关；不能据此推论所有糖尿病类型，亦不能把慢病人群减少久坐建议等同于高血压发生风险证据。",
     "applicability": "普通成年人；糖尿病结局仅限2型；非因果或个体诊疗结论",
-    "review_status": "verified"
+    "review_status": "verified",
+    "scope": "statement_level"
   },
   {
     "id": "ev_weight_behavior_support",
@@ -141,7 +156,8 @@
     "locator_status": "page_verified",
     "claim_summary": "超重肥胖者可通过动机访谈、自我监控、情绪管理和问题解决等方式，支持改变并维持健康生活方式。",
     "applicability": "18岁及以上普通成年人；院外非药物体重健康管理",
-    "review_status": "verified"
+    "review_status": "verified",
+    "scope": "concept_level"
   },
   {
     "id": "ev_weight_diet_intervention",
@@ -150,7 +166,8 @@
     "locator_status": "page_verified",
     "claim_summary": "超重肥胖成年人生活方式干预包括减少饮食能量摄入；膳食干预在限制总能量基础上采用均衡膳食或调整食物构成。",
     "applicability": "18岁及以上普通成年人；院外非药物体重健康管理",
-    "review_status": "verified"
+    "review_status": "verified",
+    "scope": "concept_level"
   },
   {
     "id": "ev_weight_exercise_intervention",
@@ -159,6 +176,7 @@
     "locator_status": "page_verified",
     "claim_summary": "超重肥胖人群运动干预推荐有氧运动，并可结合抗阻运动以支持减脂和维持瘦体重。",
     "applicability": "18岁及以上普通成年人；院外非药物体重健康管理",
-    "review_status": "verified"
+    "review_status": "verified",
+    "scope": "concept_level"
   }
 ]

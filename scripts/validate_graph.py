@@ -164,6 +164,8 @@ def validate_project(root: Path) -> List[str]:
         if source_role not in VALID_SOURCE_ROLES:
             errors.append(f"invalid source role for {source.get('id')}: {source_role}")
 
+    _validate_evidence_scopes(ontology, evidence, nodes, edges, errors)
+
     for path in paths:
         path_id = path.get("id")
         for node_id in path.get("node_ids", []):
@@ -205,6 +207,68 @@ def _validate_evidence_refs(record, label, evidence_ids, errors):
     for evidence_id in record.get("evidence_refs", []):
         if evidence_id not in evidence_ids:
             errors.append(f"unknown evidence for {label} {record_id}: {evidence_id}")
+
+
+def _validate_evidence_scopes(ontology, evidence, nodes, edges, errors):
+    """校验证据等级（scope）：被引数上限、可支撑的关系类型，以及医学因果断言的证据级别。
+
+    引入本校验的背景：曾有一条泛化的方法性证据被 123 个对象引用，且其陈述与所支撑的
+    断言不相容，而原校验只检查 evidence_id 是否存在。现在把「证据能支撑什么」写成契约
+    并由校验器强制执行。详见 sources/SOURCE_CATALOG.md 的证据治理记录。
+    """
+    scopes = {item.get("id"): item for item in ontology.get("evidence_scopes", [])}
+    if not scopes:
+        errors.append("ontology missing evidence_scopes")
+        return
+
+    evidence_by_id = {item.get("id"): item for item in evidence}
+    for item in evidence:
+        scope_id = item.get("scope")
+        if scope_id not in scopes:
+            errors.append(f"invalid evidence scope for {item.get('id')}: {scope_id}")
+
+    cited_by: Dict[str, int] = {}
+    for record in list(nodes) + list(edges):
+        relation = record.get("relation")
+        for evidence_id in record.get("evidence_refs", []):
+            cited_by[evidence_id] = cited_by.get(evidence_id, 0) + 1
+            item = evidence_by_id.get(evidence_id)
+            if item is None:
+                continue
+            scope = scopes.get(item.get("scope"))
+            if scope is None:
+                continue
+            if relation is None:
+                continue
+            allowed = scope.get("allowed_relation_types", [])
+            if relation not in allowed:
+                errors.append(
+                    f"evidence {evidence_id} (scope {scope['id']}) cannot support "
+                    f"relation {relation} on {record.get('id')}"
+                )
+
+    for item in evidence:
+        scope = scopes.get(item.get("scope"))
+        if scope is None:
+            continue
+        count = cited_by.get(item.get("id"), 0)
+        limit = scope.get("max_cited_by")
+        if isinstance(limit, int) and count > limit:
+            errors.append(
+                f"evidence {item.get('id')} cited by {count} objects, "
+                f"exceeding scope {scope['id']} limit {limit}"
+            )
+
+    for edge in edges:
+        if edge.get("relation") != "HAS_RISK_FACTOR":
+            continue
+        for evidence_id in edge.get("evidence_refs", []):
+            item = evidence_by_id.get(evidence_id)
+            if item is not None and item.get("scope") != "statement_level":
+                errors.append(
+                    f"HAS_RISK_FACTOR on {edge.get('id')} cites non-statement_level "
+                    f"evidence {evidence_id} (scope {item.get('scope')})"
+                )
 
 
 def _validate_question(

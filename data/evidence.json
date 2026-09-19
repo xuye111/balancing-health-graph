@@ -20,8 +20,8 @@
   {
     "id": "ev_diabetes_diet",
     "source_id": "src_nhc_diabetes_diet_2023",
-    "locator": "成人糖尿病食养原则相关章节（待人工核对精确页码）",
-    "locator_status": "pending",
+    "locator": "《成人糖尿病食养指南（2023年版）》第6页 三、食养原则和建议（一）食物多样，养成和建立合理膳食习惯。",
+    "locator_status": "section_verified",
     "claim_summary": "成人糖尿病食养强调均衡膳食和健康生活方式。",
     "applicability": "18岁及以上普通成年人；院外健康管理",
     "review_status": "pending_human_review"
@@ -38,8 +38,8 @@
   {
     "id": "ev_followup",
     "source_id": "src_nhc_chronic_management_2025",
-    "locator": "促进基层慢性病健康管理全流程服务（待人工核对精确页码）",
-    "locator_status": "pending",
+    "locator": "《关于加强基层慢性病健康管理服务的指导意见》三、促进基层慢性病健康管理全流程服务（一）及早发现高风险人群、（二）分类分级健康管理、（三）多病共管服务。",
+    "locator_status": "section_verified",
     "claim_summary": "基层慢性病健康管理包含高风险发现、分类分级、连续随访和多病共管。",
     "applicability": "18岁及以上普通成年人；院外健康管理",
     "review_status": "pending_human_review"
@@ -74,8 +74,8 @@
   {
     "id": "ev_htn_diet",
     "source_id": "src_nhc_htn_diet_2023",
-    "locator": "成人高血压食养原则相关章节（待人工核对精确页码）",
-    "locator_status": "pending",
+    "locator": "《成人高血压食养指南（2023年版）》第6页 三、食养原则和建议（一）减钠增钾，饮食清淡；第7页（二）合理膳食，科学食养。",
+    "locator_status": "section_verified",
     "claim_summary": "成人高血压食养强调合理膳食和控盐等健康行为。",
     "applicability": "18岁及以上普通成年人；院外健康管理",
     "review_status": "pending_human_review"
@@ -83,8 +83,8 @@
   {
     "id": "ev_obesity",
     "source_id": "src_nhc_obesity_diet_2024",
-    "locator": "成人肥胖食养原则相关章节（待人工核对精确页码）",
-    "locator_status": "pending",
+    "locator": "《成人肥胖食养指南（2024年版）》第6页 三、食养原则和建议（引言）及其（一）至（六）各节。",
+    "locator_status": "section_verified",
     "claim_summary": "成人肥胖管理包含合理膳食、能量管理和健康生活方式。",
     "applicability": "18岁及以上普通成年人；院外健康管理",
     "review_status": "pending_human_review"

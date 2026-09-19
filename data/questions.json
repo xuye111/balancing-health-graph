@@ -1,0 +1,58 @@
+[
+  {
+    "id": "q_obesity_hypertension_actions",
+    "title": "肥胖和高血压可以关注哪些共同生活方式行动？",
+    "description": "查看肥胖与高血压健康管理可共同关注的非药物行动。",
+    "category": "actions",
+    "themes": [
+      "obesity",
+      "hypertension"
+    ],
+    "intent": "find_shared_actions",
+    "seed_node_ids": [
+      "state_obesity",
+      "state_hypertension"
+    ],
+    "target_node_types": [
+      "Intervention"
+    ],
+    "allowed_relation_types": [
+      "MANAGED_BY"
+    ],
+    "max_depth": 1,
+    "featured_path_ids": [
+      "path_lifestyle"
+    ],
+    "answer_template": "可共同关注的生活方式行动包括：{result_node_labels}。",
+    "boundary_note": "用于成人院外非药物健康管理知识展示，不构成诊断、个体风险判断或治疗建议。"
+  },
+  {
+    "id": "q_shared_factors_three_conditions",
+    "title": "肥胖、高血压和糖尿病有哪些共同影响因素？",
+    "description": "仅比较三个健康状态各自直接连接的风险因素；不经其他状态传递共同性。直接连边不代表因果，关联路径仅供延伸浏览。",
+    "category": "multi_condition",
+    "themes": [
+      "obesity",
+      "hypertension",
+      "diabetes"
+    ],
+    "intent": "find_shared_factors",
+    "seed_node_ids": [
+      "state_obesity",
+      "state_hypertension",
+      "state_diabetes"
+    ],
+    "target_node_types": [
+      "RiskFactor"
+    ],
+    "allowed_relation_types": [
+      "HAS_RISK_FACTOR"
+    ],
+    "max_depth": 1,
+    "featured_path_ids": [
+      "path_shared_risks"
+    ],
+    "answer_template": "图谱中与三个主题均直接关联的影响因素包括：{result_node_labels}。",
+    "boundary_note": "用于成人院外非药物健康管理知识展示，不构成诊断、个体风险判断或治疗建议。"
+  }
+]

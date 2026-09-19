@@ -1,0 +1,366 @@
+[
+  {
+    "id": "edge_intervention_aerobic__contributes_to_goal__goal_bp_management",
+    "source": "intervention_aerobic",
+    "target": "goal_bp_management",
+    "relation": "CONTRIBUTES_TO_GOAL",
+    "themes": [
+      "shared"
+    ],
+    "evidence_refs": [
+      "ev_htn"
+    ],
+    "review_status": "pending_human_review"
+  },
+  {
+    "id": "edge_intervention_balanced_diet__contributes_to_goal__goal_energy_balance",
+    "source": "intervention_balanced_diet",
+    "target": "goal_energy_balance",
+    "relation": "CONTRIBUTES_TO_GOAL",
+    "themes": [
+      "shared"
+    ],
+    "evidence_refs": [
+      "ev_weight_diet_intervention"
+    ],
+    "review_status": "pending_human_review"
+  },
+  {
+    "id": "edge_intervention_balanced_diet__contributes_to_goal__goal_glucose_management",
+    "source": "intervention_balanced_diet",
+    "target": "goal_glucose_management",
+    "relation": "CONTRIBUTES_TO_GOAL",
+    "themes": [
+      "shared"
+    ],
+    "evidence_refs": [
+      "ev_diabetes_diet"
+    ],
+    "review_status": "pending_human_review"
+  },
+  {
+    "id": "edge_state_diabetes__has_risk_factor__risk_inactive",
+    "source": "state_diabetes",
+    "target": "risk_inactive",
+    "relation": "HAS_RISK_FACTOR",
+    "themes": [
+      "diabetes"
+    ],
+    "evidence_refs": [
+      "ev_activity_adults"
+    ],
+    "review_status": "pending_human_review"
+  },
+  {
+    "id": "edge_state_diabetes__has_risk_factor__risk_sedentary",
+    "source": "state_diabetes",
+    "target": "risk_sedentary",
+    "relation": "HAS_RISK_FACTOR",
+    "themes": [
+      "diabetes"
+    ],
+    "evidence_refs": [
+      "ev_sedentary_diabetes"
+    ],
+    "review_status": "pending_human_review"
+  },
+  {
+    "id": "edge_state_diabetes__managed_by__intervention_aerobic",
+    "source": "state_diabetes",
+    "target": "intervention_aerobic",
+    "relation": "MANAGED_BY",
+    "themes": [
+      "diabetes"
+    ],
+    "evidence_refs": [
+      "ev_diabetes_management"
+    ],
+    "review_status": "pending_human_review"
+  },
+  {
+    "id": "edge_state_diabetes__managed_by__intervention_balanced_diet",
+    "source": "state_diabetes",
+    "target": "intervention_balanced_diet",
+    "relation": "MANAGED_BY",
+    "themes": [
+      "diabetes"
+    ],
+    "evidence_refs": [
+      "ev_diabetes_diet"
+    ],
+    "review_status": "pending_human_review"
+  },
+  {
+    "id": "edge_state_hypertension__has_risk_factor__risk_alcohol",
+    "source": "state_hypertension",
+    "target": "risk_alcohol",
+    "relation": "HAS_RISK_FACTOR",
+    "themes": [
+      "hypertension"
+    ],
+    "evidence_refs": [
+      "ev_htn_behavioral_risks_2024"
+    ],
+    "review_status": "pending_human_review"
+  },
+  {
+    "id": "edge_state_hypertension__has_risk_factor__risk_high_sodium",
+    "source": "state_hypertension",
+    "target": "risk_high_sodium",
+    "relation": "HAS_RISK_FACTOR",
+    "themes": [
+      "hypertension"
+    ],
+    "evidence_refs": [
+      "ev_htn_behavioral_risks_2024"
+    ],
+    "review_status": "pending_human_review"
+  },
+  {
+    "id": "edge_state_hypertension__has_risk_factor__risk_inactive",
+    "source": "state_hypertension",
+    "target": "risk_inactive",
+    "relation": "HAS_RISK_FACTOR",
+    "themes": [
+      "hypertension"
+    ],
+    "evidence_refs": [
+      "ev_activity_adults"
+    ],
+    "review_status": "pending_human_review"
+  },
+  {
+    "id": "edge_state_hypertension__has_risk_factor__risk_smoking",
+    "source": "state_hypertension",
+    "target": "risk_smoking",
+    "relation": "HAS_RISK_FACTOR",
+    "themes": [
+      "hypertension"
+    ],
+    "evidence_refs": [
+      "ev_htn_behavioral_risks_2024"
+    ],
+    "review_status": "pending_human_review"
+  },
+  {
+    "id": "edge_state_hypertension__has_risk_factor__risk_stress",
+    "source": "state_hypertension",
+    "target": "risk_stress",
+    "relation": "HAS_RISK_FACTOR",
+    "themes": [
+      "hypertension"
+    ],
+    "evidence_refs": [
+      "ev_htn_behavioral_risks_2024"
+    ],
+    "review_status": "pending_human_review"
+  },
+  {
+    "id": "edge_state_hypertension__managed_by__intervention_aerobic",
+    "source": "state_hypertension",
+    "target": "intervention_aerobic",
+    "relation": "MANAGED_BY",
+    "themes": [
+      "hypertension"
+    ],
+    "evidence_refs": [
+      "ev_htn"
+    ],
+    "review_status": "pending_human_review"
+  },
+  {
+    "id": "edge_state_hypertension__managed_by__intervention_balanced_diet",
+    "source": "state_hypertension",
+    "target": "intervention_balanced_diet",
+    "relation": "MANAGED_BY",
+    "themes": [
+      "hypertension"
+    ],
+    "evidence_refs": [
+      "ev_htn_diet"
+    ],
+    "review_status": "pending_human_review"
+  },
+  {
+    "id": "edge_state_hypertension__managed_by__intervention_reduce_sodium",
+    "source": "state_hypertension",
+    "target": "intervention_reduce_sodium",
+    "relation": "MANAGED_BY",
+    "themes": [
+      "hypertension"
+    ],
+    "evidence_refs": [
+      "ev_htn_diet"
+    ],
+    "review_status": "pending_human_review"
+  },
+  {
+    "id": "edge_state_hypertension__managed_by__intervention_resistance",
+    "source": "state_hypertension",
+    "target": "intervention_resistance",
+    "relation": "MANAGED_BY",
+    "themes": [
+      "hypertension"
+    ],
+    "evidence_refs": [
+      "ev_htn"
+    ],
+    "review_status": "pending_human_review"
+  },
+  {
+    "id": "edge_state_hypertension__managed_by__intervention_self_plan",
+    "source": "state_hypertension",
+    "target": "intervention_self_plan",
+    "relation": "MANAGED_BY",
+    "themes": [
+      "hypertension"
+    ],
+    "evidence_refs": [
+      "ev_htn"
+    ],
+    "review_status": "pending_human_review"
+  },
+  {
+    "id": "edge_state_obesity__has_risk_factor__risk_excess_energy",
+    "source": "state_obesity",
+    "target": "risk_excess_energy",
+    "relation": "HAS_RISK_FACTOR",
+    "themes": [
+      "obesity"
+    ],
+    "evidence_refs": [
+      "ev_obesity_diet_etiology"
+    ],
+    "review_status": "pending_human_review"
+  },
+  {
+    "id": "edge_state_obesity__has_risk_factor__risk_inactive",
+    "source": "state_obesity",
+    "target": "risk_inactive",
+    "relation": "HAS_RISK_FACTOR",
+    "themes": [
+      "obesity"
+    ],
+    "evidence_refs": [
+      "ev_activity_adults"
+    ],
+    "review_status": "pending_human_review"
+  },
+  {
+    "id": "edge_state_obesity__has_risk_factor__risk_poor_sleep",
+    "source": "state_obesity",
+    "target": "risk_poor_sleep",
+    "relation": "HAS_RISK_FACTOR",
+    "themes": [
+      "obesity"
+    ],
+    "evidence_refs": [
+      "ev_obesity_sleep_risk"
+    ],
+    "review_status": "pending_human_review"
+  },
+  {
+    "id": "edge_state_obesity__has_risk_factor__risk_stress",
+    "source": "state_obesity",
+    "target": "risk_stress",
+    "relation": "HAS_RISK_FACTOR",
+    "themes": [
+      "obesity"
+    ],
+    "evidence_refs": [
+      "ev_obesity_stress_risk"
+    ],
+    "review_status": "pending_human_review"
+  },
+  {
+    "id": "edge_state_obesity__has_risk_factor__risk_sugary_drinks",
+    "source": "state_obesity",
+    "target": "risk_sugary_drinks",
+    "relation": "HAS_RISK_FACTOR",
+    "themes": [
+      "obesity"
+    ],
+    "evidence_refs": [
+      "ev_obesity_diet_etiology"
+    ],
+    "review_status": "pending_human_review"
+  },
+  {
+    "id": "edge_state_obesity__managed_by__intervention_aerobic",
+    "source": "state_obesity",
+    "target": "intervention_aerobic",
+    "relation": "MANAGED_BY",
+    "themes": [
+      "obesity"
+    ],
+    "evidence_refs": [
+      "ev_weight_exercise_intervention"
+    ],
+    "review_status": "pending_human_review"
+  },
+  {
+    "id": "edge_state_obesity__managed_by__intervention_balanced_diet",
+    "source": "state_obesity",
+    "target": "intervention_balanced_diet",
+    "relation": "MANAGED_BY",
+    "themes": [
+      "obesity"
+    ],
+    "evidence_refs": [
+      "ev_weight_diet_intervention"
+    ],
+    "review_status": "pending_human_review"
+  },
+  {
+    "id": "edge_state_obesity__managed_by__intervention_energy_control",
+    "source": "state_obesity",
+    "target": "intervention_energy_control",
+    "relation": "MANAGED_BY",
+    "themes": [
+      "obesity"
+    ],
+    "evidence_refs": [
+      "ev_weight_diet_intervention"
+    ],
+    "review_status": "pending_human_review"
+  },
+  {
+    "id": "edge_state_obesity__managed_by__intervention_portion_awareness",
+    "source": "state_obesity",
+    "target": "intervention_portion_awareness",
+    "relation": "MANAGED_BY",
+    "themes": [
+      "obesity"
+    ],
+    "evidence_refs": [
+      "ev_weight_diet_intervention"
+    ],
+    "review_status": "pending_human_review"
+  },
+  {
+    "id": "edge_state_obesity__managed_by__intervention_resistance",
+    "source": "state_obesity",
+    "target": "intervention_resistance",
+    "relation": "MANAGED_BY",
+    "themes": [
+      "obesity"
+    ],
+    "evidence_refs": [
+      "ev_weight_exercise_intervention"
+    ],
+    "review_status": "pending_human_review"
+  },
+  {
+    "id": "edge_state_obesity__managed_by__intervention_self_plan",
+    "source": "state_obesity",
+    "target": "intervention_self_plan",
+    "relation": "MANAGED_BY",
+    "themes": [
+      "obesity"
+    ],
+    "evidence_refs": [
+      "ev_weight_behavior_support"
+    ],
+    "review_status": "pending_human_review"
+  }
+]

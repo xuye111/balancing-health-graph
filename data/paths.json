@@ -1,0 +1,56 @@
+[
+  {
+    "id": "path_lifestyle",
+    "title": "非药物生活方式共管",
+    "summary": "均衡膳食和规律活动连接三类慢病健康管理与共同目标。",
+    "node_ids": [
+      "state_obesity",
+      "state_hypertension",
+      "state_diabetes",
+      "intervention_balanced_diet",
+      "intervention_aerobic",
+      "goal_energy_balance",
+      "goal_bp_management",
+      "goal_glucose_management"
+    ],
+    "edge_ids": [
+      "edge_state_obesity__managed_by__intervention_balanced_diet",
+      "edge_state_hypertension__managed_by__intervention_balanced_diet",
+      "edge_state_diabetes__managed_by__intervention_balanced_diet",
+      "edge_state_obesity__managed_by__intervention_aerobic",
+      "edge_state_hypertension__managed_by__intervention_aerobic",
+      "edge_state_diabetes__managed_by__intervention_aerobic",
+      "edge_intervention_balanced_diet__contributes_to_goal__goal_energy_balance",
+      "edge_intervention_aerobic__contributes_to_goal__goal_bp_management",
+      "edge_intervention_balanced_diet__contributes_to_goal__goal_glucose_management"
+    ],
+    "themes": [
+      "shared",
+      "obesity",
+      "hypertension",
+      "diabetes"
+    ]
+  },
+  {
+    "id": "path_shared_risks",
+    "title": "三病共同因素：身体活动不足",
+    "summary": "通过三个健康状态各自的一跳关系查看当前共同因素；直接关联不等于确定因果。",
+    "node_ids": [
+      "state_obesity",
+      "state_hypertension",
+      "state_diabetes",
+      "risk_inactive"
+    ],
+    "edge_ids": [
+      "edge_state_obesity__has_risk_factor__risk_inactive",
+      "edge_state_hypertension__has_risk_factor__risk_inactive",
+      "edge_state_diabetes__has_risk_factor__risk_inactive"
+    ],
+    "themes": [
+      "shared",
+      "obesity",
+      "hypertension",
+      "diabetes"
+    ]
+  }
+]

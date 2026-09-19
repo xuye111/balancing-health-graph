@@ -1,0 +1,46 @@
+name: verify
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    name: 图谱校验与测试
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+
+      - name: 图谱结构与引用闭包校验
+        run: python3 scripts/validate_graph.py
+
+      - name: Python 测试
+        run: python3 -m unittest discover -s tests -p 'test_*.py'
+
+      - name: Node 测试
+        run: node --test tests/*.test.mjs
+
+      - name: 命令行查询示例（两个已批准问题）
+        run: |
+          node examples/query.mjs q_obesity_hypertension_actions
+          node examples/query.mjs q_shared_factors_three_conditions
+
+      - name: 未知问题必须以非零状态码退出且不输出结果
+        run: |
+          if node examples/query.mjs unknown-question >/dev/null 2>&1; then
+            echo "未知问题应当失败，但退出码为 0" >&2
+            exit 1
+          fi

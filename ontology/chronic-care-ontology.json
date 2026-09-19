@@ -1,0 +1,220 @@
+{
+  "schema_version": "1.0.0",
+  "title": "成人慢病院外健康管理本体",
+  "scope": "18岁及以上普通成年人；肥胖、高血压、糖尿病；院外非药物健康管理",
+  "themes": [
+    "shared",
+    "obesity",
+    "hypertension",
+    "diabetes"
+  ],
+  "review_statuses": [
+    "verified",
+    "pending_human_review",
+    "structure_only"
+  ],
+  "classes": [
+    {
+      "id": "Population",
+      "label": "适用人群",
+      "definition": "健康管理知识适用的人群或人群条件。",
+      "color": "#64748b"
+    },
+    {
+      "id": "HealthState",
+      "label": "健康状态",
+      "definition": "健康管理持续关注的慢病状态或风险状态。",
+      "color": "#e85d75"
+    },
+    {
+      "id": "RiskFactor",
+      "label": "风险因素",
+      "definition": "与健康状态相关的可改变或不可改变因素。",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "Indicator",
+      "label": "健康指标",
+      "definition": "可观察、测量或持续记录的健康指标。",
+      "color": "#0ea5e9"
+    },
+    {
+      "id": "Assessment",
+      "label": "管理评估",
+      "definition": "院外健康管理使用的风险、行为或状态评估活动。",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "ManagementGoal",
+      "label": "管理目标",
+      "definition": "可跟踪、可复盘的阶段性健康管理目标。",
+      "color": "#14b8a6"
+    },
+    {
+      "id": "Intervention",
+      "label": "非药物干预",
+      "definition": "膳食、运动、睡眠和行为支持等院外管理措施。",
+      "color": "#22c55e"
+    },
+    {
+      "id": "MonitoringActivity",
+      "label": "监测活动",
+      "definition": "在家庭或日常生活中持续观察和记录健康指标的活动。",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "FollowUpActivity",
+      "label": "随访活动",
+      "definition": "定期回顾状态、目标和执行情况的连续管理活动。",
+      "color": "#6366f1"
+    },
+    {
+      "id": "SafetySignal",
+      "label": "安全信号",
+      "definition": "提示暂停普通健康管理并寻求专业医疗评估的异常信号。",
+      "color": "#ef4444"
+    },
+    {
+      "id": "EvidenceSource",
+      "label": "证据来源",
+      "definition": "支撑节点或关系的权威资料来源。",
+      "color": "#475569"
+    }
+  ],
+  "relations": [
+    {
+      "id": "APPLIES_TO",
+      "label": "适用于",
+      "definition": "健康管理活动、目标或措施的适用人群。",
+      "source_types": [
+        "Assessment",
+        "ManagementGoal",
+        "Intervention",
+        "MonitoringActivity",
+        "FollowUpActivity"
+      ],
+      "target_types": [
+        "Population"
+      ]
+    },
+    {
+      "id": "HAS_RISK_FACTOR",
+      "label": "具有风险因素",
+      "definition": "健康状态与相关风险因素之间的关联。",
+      "source_types": [
+        "HealthState"
+      ],
+      "target_types": [
+        "RiskFactor"
+      ]
+    },
+    {
+      "id": "ASSESSED_BY",
+      "label": "通过评估",
+      "definition": "健康状态对应的院外管理评估。",
+      "source_types": [
+        "HealthState"
+      ],
+      "target_types": [
+        "Assessment"
+      ]
+    },
+    {
+      "id": "MEASURED_BY",
+      "label": "通过指标观察",
+      "definition": "用于观察或描述健康状态的指标。",
+      "source_types": [
+        "HealthState"
+      ],
+      "target_types": [
+        "Indicator"
+      ]
+    },
+    {
+      "id": "SHARES_FACTOR_WITH",
+      "label": "共享健康管理因素",
+      "definition": "两个健康状态存在共同管理因素。",
+      "source_types": [
+        "HealthState"
+      ],
+      "target_types": [
+        "HealthState"
+      ]
+    },
+    {
+      "id": "MANAGED_BY",
+      "label": "通过非药物措施管理",
+      "definition": "健康状态与非药物健康管理措施的关联。",
+      "source_types": [
+        "HealthState"
+      ],
+      "target_types": [
+        "Intervention"
+      ]
+    },
+    {
+      "id": "CONTRIBUTES_TO_GOAL",
+      "label": "支持管理目标",
+      "definition": "非药物措施对健康管理目标的支持关系，不自动表示因果。",
+      "source_types": [
+        "Intervention"
+      ],
+      "target_types": [
+        "ManagementGoal"
+      ]
+    },
+    {
+      "id": "MONITORED_BY",
+      "label": "通过活动监测",
+      "definition": "健康指标与日常监测活动之间的关系。",
+      "source_types": [
+        "Indicator"
+      ],
+      "target_types": [
+        "MonitoringActivity"
+      ]
+    },
+    {
+      "id": "REVIEWED_IN",
+      "label": "在随访中复盘",
+      "definition": "管理目标在连续随访活动中进行回顾。",
+      "source_types": [
+        "ManagementGoal"
+      ],
+      "target_types": [
+        "FollowUpActivity"
+      ]
+    },
+    {
+      "id": "TRIGGERS_MEDICAL_REVIEW",
+      "label": "触发医疗评估提示",
+      "definition": "安全信号触发寻求专业医疗评估的管理动作。",
+      "source_types": [
+        "SafetySignal"
+      ],
+      "target_types": [
+        "FollowUpActivity"
+      ]
+    },
+    {
+      "id": "SUPPORTED_BY",
+      "label": "由来源支持",
+      "definition": "图谱概念由权威资料来源支持。",
+      "source_types": [
+        "Population",
+        "HealthState",
+        "RiskFactor",
+        "Indicator",
+        "Assessment",
+        "ManagementGoal",
+        "Intervention",
+        "MonitoringActivity",
+        "FollowUpActivity",
+        "SafetySignal"
+      ],
+      "target_types": [
+        "EvidenceSource"
+      ]
+    }
+  ]
+}

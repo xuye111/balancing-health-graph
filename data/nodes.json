@@ -1,0 +1,354 @@
+[
+  {
+    "id": "goal_bp_management",
+    "type": "ManagementGoal",
+    "label": "稳定血压自我管理",
+    "definition": "建立规范监测、记录与随访习惯。",
+    "themes": [
+      "hypertension"
+    ],
+    "applicability": [
+      "adult_general"
+    ],
+    "evidence_refs": [
+      "ev_home_bp_standard"
+    ],
+    "review_status": "pending_human_review"
+  },
+  {
+    "id": "goal_energy_balance",
+    "type": "ManagementGoal",
+    "label": "改善能量平衡",
+    "definition": "通过饮食和活动共同改善能量平衡。",
+    "themes": [
+      "obesity"
+    ],
+    "applicability": [
+      "adult_general"
+    ],
+    "evidence_refs": [
+      "ev_obesity"
+    ],
+    "review_status": "pending_human_review"
+  },
+  {
+    "id": "goal_glucose_management",
+    "type": "ManagementGoal",
+    "label": "改善血糖管理稳定性",
+    "definition": "通过健康行为、监测和随访支持血糖管理。",
+    "themes": [
+      "diabetes"
+    ],
+    "applicability": [
+      "adult_general"
+    ],
+    "evidence_refs": [
+      "ev_diabetes_management"
+    ],
+    "review_status": "pending_human_review"
+  },
+  {
+    "id": "intervention_aerobic",
+    "type": "Intervention",
+    "label": "规律有氧活动",
+    "definition": "根据个人情况逐步形成规律有氧活动。",
+    "themes": [
+      "shared"
+    ],
+    "applicability": [
+      "adult_general"
+    ],
+    "evidence_refs": [
+      "ev_weight_exercise_intervention"
+    ],
+    "review_status": "pending_human_review"
+  },
+  {
+    "id": "intervention_balanced_diet",
+    "type": "Intervention",
+    "label": "均衡膳食结构",
+    "definition": "以多样食物和合理结构支持慢病健康管理。",
+    "themes": [
+      "shared"
+    ],
+    "applicability": [
+      "adult_general"
+    ],
+    "evidence_refs": [
+      "ev_weight_diet_intervention"
+    ],
+    "review_status": "pending_human_review"
+  },
+  {
+    "id": "intervention_energy_control",
+    "type": "Intervention",
+    "label": "能量摄入管理",
+    "definition": "结合个人情况调整总能量和食物份量。",
+    "themes": [
+      "obesity"
+    ],
+    "applicability": [
+      "adult_general"
+    ],
+    "evidence_refs": [
+      "ev_obesity"
+    ],
+    "review_status": "pending_human_review"
+  },
+  {
+    "id": "intervention_portion_awareness",
+    "type": "Intervention",
+    "label": "关注进食份量",
+    "definition": "通过份量意识支持体重和血糖管理。",
+    "themes": [
+      "shared"
+    ],
+    "applicability": [
+      "adult_general"
+    ],
+    "evidence_refs": [
+      "ev_weight_diet_intervention"
+    ],
+    "review_status": "pending_human_review"
+  },
+  {
+    "id": "intervention_reduce_sodium",
+    "type": "Intervention",
+    "label": "减少膳食钠",
+    "definition": "减少食盐和其他高钠食物摄入。",
+    "themes": [
+      "hypertension"
+    ],
+    "applicability": [
+      "adult_general"
+    ],
+    "evidence_refs": [
+      "ev_htn_diet"
+    ],
+    "review_status": "pending_human_review"
+  },
+  {
+    "id": "intervention_resistance",
+    "type": "Intervention",
+    "label": "抗阻活动",
+    "definition": "根据个人情况加入规律力量或抗阻活动。",
+    "themes": [
+      "shared"
+    ],
+    "applicability": [
+      "adult_general"
+    ],
+    "evidence_refs": [
+      "ev_weight_exercise_intervention"
+    ],
+    "review_status": "pending_human_review"
+  },
+  {
+    "id": "intervention_self_plan",
+    "type": "Intervention",
+    "label": "自我管理计划",
+    "definition": "把目标、行动、监测和复盘整理为可执行计划。",
+    "themes": [
+      "shared"
+    ],
+    "applicability": [
+      "adult_general"
+    ],
+    "evidence_refs": [
+      "ev_weight_behavior_support"
+    ],
+    "review_status": "pending_human_review"
+  },
+  {
+    "id": "risk_alcohol",
+    "type": "RiskFactor",
+    "label": "过量饮酒",
+    "definition": "与过量饮酒相关的健康风险行为。",
+    "themes": [
+      "shared"
+    ],
+    "applicability": [
+      "adult_general"
+    ],
+    "evidence_refs": [
+      "ev_htn_behavioral_risks_2024"
+    ],
+    "review_status": "pending_human_review"
+  },
+  {
+    "id": "risk_excess_energy",
+    "type": "RiskFactor",
+    "label": "能量摄入偏多",
+    "definition": "长期能量摄入与消耗不平衡的可改变因素。",
+    "themes": [
+      "shared"
+    ],
+    "applicability": [
+      "adult_general"
+    ],
+    "evidence_refs": [
+      "ev_obesity_diet_etiology"
+    ],
+    "review_status": "pending_human_review"
+  },
+  {
+    "id": "risk_high_sodium",
+    "type": "RiskFactor",
+    "label": "高钠膳食",
+    "definition": "食盐及其他含钠食物摄入偏多。",
+    "themes": [
+      "shared"
+    ],
+    "applicability": [
+      "adult_general"
+    ],
+    "evidence_refs": [
+      "ev_htn_diet"
+    ],
+    "review_status": "pending_human_review"
+  },
+  {
+    "id": "risk_inactive",
+    "type": "RiskFactor",
+    "label": "身体活动不足",
+    "definition": "未达到推荐的身体活动水平；不等同于久坐。",
+    "themes": [
+      "shared"
+    ],
+    "applicability": [
+      "adult_general"
+    ],
+    "evidence_refs": [
+      "ev_activity_definition"
+    ],
+    "review_status": "pending_human_review"
+  },
+  {
+    "id": "risk_poor_sleep",
+    "type": "RiskFactor",
+    "label": "睡眠不足或不规律",
+    "definition": "睡眠时长、节律或质量持续不理想。",
+    "themes": [
+      "shared"
+    ],
+    "applicability": [
+      "adult_general"
+    ],
+    "evidence_refs": [
+      "ev_obesity_sleep_risk"
+    ],
+    "review_status": "pending_human_review"
+  },
+  {
+    "id": "risk_sedentary",
+    "type": "RiskFactor",
+    "label": "久坐行为",
+    "definition": "清醒时低能量消耗的坐、斜倚或卧姿活动。",
+    "themes": [
+      "shared"
+    ],
+    "applicability": [
+      "adult_general"
+    ],
+    "evidence_refs": [
+      "ev_sedentary_definition"
+    ],
+    "review_status": "pending_human_review"
+  },
+  {
+    "id": "risk_smoking",
+    "type": "RiskFactor",
+    "label": "吸烟",
+    "definition": "烟草吸烟相关健康风险行为。",
+    "themes": [
+      "shared"
+    ],
+    "applicability": [
+      "adult_general"
+    ],
+    "evidence_refs": [
+      "ev_htn_behavioral_risks_2024"
+    ],
+    "review_status": "pending_human_review"
+  },
+  {
+    "id": "risk_stress",
+    "type": "RiskFactor",
+    "label": "长期压力",
+    "definition": "持续心理压力或情绪负担。",
+    "themes": [
+      "shared"
+    ],
+    "applicability": [
+      "adult_general"
+    ],
+    "evidence_refs": [
+      "ev_obesity_stress_risk"
+    ],
+    "review_status": "pending_human_review"
+  },
+  {
+    "id": "risk_sugary_drinks",
+    "type": "RiskFactor",
+    "label": "含糖饮料偏多",
+    "definition": "含添加糖饮料摄入频率偏高。",
+    "themes": [
+      "shared"
+    ],
+    "applicability": [
+      "adult_general"
+    ],
+    "evidence_refs": [
+      "ev_obesity_diet_etiology"
+    ],
+    "review_status": "pending_human_review"
+  },
+  {
+    "id": "state_diabetes",
+    "type": "HealthState",
+    "label": "糖尿病健康管理状态",
+    "definition": "需要持续进行院外糖尿病健康管理的状态。",
+    "themes": [
+      "diabetes"
+    ],
+    "applicability": [
+      "adult_general"
+    ],
+    "evidence_refs": [
+      "ev_diabetes_management"
+    ],
+    "review_status": "pending_human_review"
+  },
+  {
+    "id": "state_hypertension",
+    "type": "HealthState",
+    "label": "高血压健康管理状态",
+    "definition": "需要持续进行院外血压健康管理的状态。",
+    "themes": [
+      "hypertension"
+    ],
+    "applicability": [
+      "adult_general"
+    ],
+    "evidence_refs": [
+      "ev_followup"
+    ],
+    "review_status": "pending_human_review"
+  },
+  {
+    "id": "state_obesity",
+    "type": "HealthState",
+    "label": "肥胖状态",
+    "definition": "需要持续进行体重及相关代谢风险管理的健康状态。",
+    "themes": [
+      "obesity"
+    ],
+    "applicability": [
+      "adult_general"
+    ],
+    "evidence_refs": [
+      "ev_obesity"
+    ],
+    "review_status": "pending_human_review"
+  }
+]
